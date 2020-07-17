@@ -8,4 +8,6 @@ create user tester;
 
 grant all on database defaultdb to tester;
 
-psql "postgresql://cockroach:26257/artem?sslmode=require" -U tester
+database=test
+
+psql "postgresql://cockroach:26257/test?sslmode=require" -U tester
